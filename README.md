@@ -38,14 +38,9 @@ Your app is ready to be deployed!
 ```
 ├── src
 │   ├── components
-│   │   ├── auth
-│   │   │  ├── auth.controller.ts
-│   │   │  └── auth.route.ts
-│   │   ├── users
-│   │   │   ├── user.controller.ts
-│   │   │   ├── user.controller.ts
-│   │   │   └── user.route.ts
-│   │   └── index.ts
+│   │   │   ├── Layout.tsx
+│   │   │   ├── NavBar.tsx
+│   │   │   └── ReportItem.tsx
 │   ├── pages
 │   │   |__ Home
 |   |       |--Home.tsx
