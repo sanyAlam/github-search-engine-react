@@ -1,6 +1,13 @@
 
 ## To run on your local ✨
-Clone this repo and run following command
+Clone this repo
+
+Add `.env.local` file in project root
+with following past line
+
+`REACT_APP_API_URL=http://localhost:8080/v1/`
+
+And run following command
 ### Available Scripts
 
 In the project directory, you can run:
