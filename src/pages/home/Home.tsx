@@ -64,7 +64,7 @@ const Home: FC<any> = (): ReactElement => {
             <Grid container direction="column" justifyContent="center" alignItems="center" spacing={3}>
                 <Grid item>
                     <TextField
-                        label="Search a repository"
+                        label= { searchKey==='' ? "Search a repository":"" }
                         name="name"
                         variant="outlined"
                         color="primary"
@@ -107,7 +107,7 @@ const Home: FC<any> = (): ReactElement => {
                             justifyContent: 'center'
                         }}
                     >
-                        {repoList.length > 0 ? (
+                        {repoList?.length > 0 ? (
                             <List style={{ maxHeight: '100%', overflow: 'auto' }}>
                                 {repoList.map((item, index) => (
                                     <ListItem
