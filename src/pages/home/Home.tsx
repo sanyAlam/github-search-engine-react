@@ -14,7 +14,7 @@ const useStyles = makeStyles(() => ({
         marginTop: 0,
         fontWeight: 500,
         background: 'white',
-        borderRadius: 3,
+        borderRadius: 4,
         width: '55vw'
     },
     input: {
@@ -60,8 +60,7 @@ const Home: FC<any> = (): ReactElement => {
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center'
-            }}
-        >
+            }}>
             <Grid container direction="column" justifyContent="center" alignItems="center" spacing={3}>
                 <Grid item>
                     <TextField
@@ -71,6 +70,7 @@ const Home: FC<any> = (): ReactElement => {
                         color="primary"
                         className={classes.textField}
                         size="small"
+                        InputLabelProps={{shrink: false}}
                         InputProps={{
                             endAdornment: (
                                 <InputAdornment position="end">
